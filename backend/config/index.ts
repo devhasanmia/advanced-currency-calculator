@@ -6,4 +6,5 @@ export default {
   port: process.env.PORT || 4000,
   databaseURL: process.env.DATABASE_URL,
   NODE_ENV: process.env.NODE_ENV,
+  ECB_URL: process.env.ECB_URL,
 };

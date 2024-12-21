@@ -3,7 +3,7 @@ import express, { Application, Request, Response } from "express";
 import cors from "cors";
 import morgan from "morgan";
 import rateLimit from "express-rate-limit";
-
+import router from "./routes";
 const app: Application = express();
 
 // Rate Limiting Configuration
@@ -26,6 +26,8 @@ app.get("/", (req: Request, res: Response) => {
         message: "Server is up and running!",
     });
 });
+// API Routes
+app.use('/api/v1/', router);
 // app.use("/api/v1/", router);
 // Error Handling Middleware
 // app.use(((err, req, res, next) => globalError(err, req, res, next)) as (

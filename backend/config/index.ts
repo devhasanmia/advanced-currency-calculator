@@ -7,4 +7,5 @@ export default {
   databaseURL: process.env.DATABASE_URL,
   NODE_ENV: process.env.NODE_ENV,
   ECB_URL: process.env.ECB_URL,
+  HISTORICAL_RATES_URL: process.env.HISTORICAL_RATES_URL
 };
